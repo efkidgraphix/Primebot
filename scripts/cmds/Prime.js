@@ -77,7 +77,7 @@ const apiEndpoint = "https://aryanapiz.onrender.com";
 
 module.exports = {
   config: {
-    name: "ai",
+    name: "Prime",
     aliases: [],
     version: "1.3",
     author: "ArYAN",
@@ -94,13 +94,13 @@ module.exports = {
     },
     category: "ai",
     guide: {
-      en: ` ai [question] - Replace {p} with your command prefix and 'question' with your actual query. ai models to list available models. ai lyrics [ songName ] to fetch song lyrics. ai pin query ( title ) - (number ) to fetch images (split with '-'). ai send video [ query ] to fetch videos. ai send music [ query ] to fetch songs. ai send shoti. ai tm gen/inbox ( mail )`
+      en: ` prime [question] - Replace {p} with your command prefix and 'question' with your actual query. ai models to list available models. ai lyrics [ songName ] to fetch song lyrics. ai pin query ( title ) - (number ) to fetch images (split with '-'). ai send video [ query ] to fetch videos. ai send music [ query ] to fetch songs. ai send shoti. ai tm gen/inbox ( mail )`
     }
   },
   onStart: async function() {},
   onChat: async function({ api, event, args, message }) {
     try {
-      const prefix = 'ai';
+      const prefix = 'Prime';
 
       if (!event.body.toLowerCase().startsWith(prefix)) return;
 
@@ -108,7 +108,7 @@ module.exports = {
 
       if (!prompt)
         return message.reply(
-          "𝖧𝖾𝗅𝗅𝗈! 𝗉𝗅𝖾𝖺𝗌𝖾 𝖺𝖽𝖽 𝗒𝗈𝗎𝗋 𝗣𝗿𝗼𝗺𝗉𝘁 𝗜𝗻𝘁𝗿𝘂𝗰𝗮𝘁𝗶𝗼𝗻 𝗍𝗈 𝗀𝖾𝗍 𝖺 𝖲𝗉𝖾𝖼𝗂𝖿𝗂𝖼 𝖱𝖾𝗌𝗉𝗈𝗇𝗌𝖾. \n\n╭──🌼 \n│𝖺𝗂 ( 𝖸𝗈𝗎𝗋 𝗇𝗈𝗋𝗆𝖺𝗅 𝗉𝗋𝗈𝗆𝗉𝗍𝗌) \n│𝖺𝗂 𝗌𝖾𝗇𝗍 𝗅𝗒𝗋𝗂𝖼𝗌 ( 𝗌𝗈𝗇𝗀𝖭𝖺𝗆𝖾 ) \n│𝖺𝗂 𝗍𝗆 𝗀𝖾𝗇/𝗂𝗇𝖻𝗈𝗑 ( 𝖾𝗆𝖺𝗂𝗅 ) \n│𝖺𝗂 𝗌𝖾𝗇𝖽 𝗆𝗎𝗌𝗂𝖼 ( 𝗌𝗈𝗇𝗀𝖭𝖺𝗆𝖾 ) \n│𝖺𝗂 𝗌𝖾𝗇𝖽 𝗌𝗁𝗈𝗍𝗂 \n│𝖺𝗂 𝗌𝖾𝗇𝖽 𝗏𝗂𝖽𝖾𝗈 ( 𝗏𝗂𝖽𝖾𝗈 𝗍𝗂𝗍𝗅𝖾) \n│𝖺𝗂 𝗉𝗂𝗇 𝗊𝗎𝖾𝗋𝗒 ( 𝗍𝗂𝗍𝗅𝖾 ) - (𝗇𝗎𝗆𝖻𝖾𝗋)\n│𝖺𝗂 𝗉𝖾𝗑𝖾𝗅𝗌 𝗊𝗎𝖾𝗋𝗒 ( 𝗍𝗂𝗍𝗅𝖾 ) - (𝗇𝗎𝗆𝖻𝖾𝗋) \n╰─────────────🌼\n\n 📝 𝗲𝘅𝗮𝗺𝗽𝗹𝗲: ai send music metamorphosis."
+          "Kindly provide your question this is an improved prime command 🇲🇼 .."
         );
 
       switch (true) {
@@ -396,7 +396,7 @@ case prompt.toLowerCase().startsWith('pin query'): {
             `${apiEndpoint}/api/gpt?prompt=${encodeURIComponent(prompt)}&model=${selectedModel}`
           );
 
-          await message.reply(`💭 𝗚𝗣𝗧 \n━━━━━━━━━━━━\n\n${data.original}`);
+          await message.reply(`🇲🇼Prime bot\n━━━━━━━━━━━━\n\n${data.original}`);
           api.setMessageReaction("✅", event.messageID, () => {}, true);
         }
       }
