@@ -1,7 +1,7 @@
 {
   "facebookAccount": {
-    "email": "61559062179092",
-    "password": "prefixaibot",
+    "email": "",
+    "password": "",
     "2FASecret": "",
     "i_user": "",
     "proxy": null,
@@ -36,7 +36,7 @@
     "whiteListIds": [],
     "notes": "if you enable this feature, only the ids in the whiteListIds section can use the bot"
   },
-  "nickNameBot": "𓆩EF|PRIME V3.5",
+  "nickNameBot": "𓆩𝙀𝙇𝙄𝙏𝙀 𝙀𝙁-𝙋𝙍𝙄𝙈𝙀 ",
   "authorName": "Frank kaumba",
   "authorFB": "https://www.facebook.com/profile.php?id=61557780285734",
   "authorEmail": "efkidgamer@gmail.com",
